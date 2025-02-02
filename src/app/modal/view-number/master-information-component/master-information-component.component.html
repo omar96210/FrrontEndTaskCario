@@ -1,0 +1,72 @@
+<div class="p-1">
+    <div class="BoxStyleForModal">
+        <div class="row ">
+            <div class="col-12 flex-space-between">
+                <div class="inline-flex-center">
+                    <h5 class="poppins-bold p-0 m-0">
+                        {{masterInfo.phoneNumber}}
+                    </h5>
+                    &nbsp; &nbsp;
+                    <button class="primaryBtn flex-center  p-2">
+                        <p class="px-2 font-neo-sans-arabic-500">
+                            {{masterInfo['statusName'+preferencesService.getAppLanguage()]}}
+                        </p>
+                    </button>
+                </div>
+                <div class="IconSvgMore pointer">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12C18 12.5523 18.4477 13 19 13Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <app-master-info-data-show [labelText]="'viewNumberModal.1.protocalName'" [data]="masterInfo.protocolData"
+                    [dataType]="'translate'" [noBorder]="true"></app-master-info-data-show>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <app-master-info-data-show [labelText]="'viewNumberModal.2.country'" [data]="masterInfo.countryData"
+                    [dataType]="'translate'" [imageSrc]="masterInfo.countryData.imageSrc"></app-master-info-data-show>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <app-master-info-data-show [labelText]="'viewNumberModal.3.currentClient'" [data]="masterInfo.clientData"
+                    [dataType]="'translate'" [imageSrc]="masterInfo.clientData.imageSrc" ></app-master-info-data-show>
+            </div>
+    
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <app-master-info-data-show [labelText]="'viewNumberModal.4.numberOfExtensions'"
+                    [data]="masterInfo.extensionsnumber" [padNumberEnable]="true"></app-master-info-data-show>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <app-master-info-data-show [labelText]="'viewNumberModal.5.lastShipmentDate'"
+                    [data]="masterInfo.lastShipmentDate"></app-master-info-data-show>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <app-master-info-data-show [labelText]="'viewNumberModal.6.currentBalance'" [data]="masterInfo.balance"
+                    [currencyData]="masterInfo.currencyData"></app-master-info-data-show>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <app-master-info-data-show [labelText]="'viewNumberModal.7.currentBalanceForCurrentUser'"
+                    [data]="masterInfo.usedBalanceForClient"
+                    [currencyData]="masterInfo.currencyData"></app-master-info-data-show>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <app-master-info-data-show [labelText]="'viewNumberModal.8.currentBalanceForAll'"
+                    [data]="masterInfo.usedBalanceForAllClient" [currencyData]="masterInfo.currencyData"
+                    [noBorder]="true"></app-master-info-data-show>
+            </div>
+        </div>
+    </div>
+</div>

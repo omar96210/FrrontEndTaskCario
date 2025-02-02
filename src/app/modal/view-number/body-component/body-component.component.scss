@@ -1,0 +1,238 @@
+.tableMore {
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+
+}
+
+th,
+td {
+    background: white;
+    padding: 12px;
+}
+
+th {
+    background: #F4F5F7;
+}
+
+td {
+    border-bottom: 0.75px solid #0000001A;
+    border-top: 0.75px solid #0000001A;
+}
+
+
+
+
+.tdRades0Ar {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.tdRadeslastAr {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.tdRades0En {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.tdRadeslastEn {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+.tdBorder0Ar {
+    border-right: 0.75px solid #0000001A;
+
+}
+
+.tdBorderlastAr {
+    border-left: 0.75px solid #0000001A;
+
+}
+
+.tdBorder0En {
+    border-left: 0.75px solid #0000001A;
+
+}
+
+.tdBorderlastEn {
+    border-right: 0.75px solid #0000001A;
+
+}
+
+
+
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .table-wrapper {
+
+        max-width: 80vw;
+        max-height: 300px;
+        /* Adjust as needed */
+        overflow: auto;
+    }
+
+    .table-wrapper table {
+
+        overflow: hidden;
+        table-layout: fixed;
+        /* Use the natural table width (avoid fixed layout) */
+    }
+
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .table-wrapper {
+
+        max-width: 80vw;
+        max-height: 300px;
+        /* Adjust as needed */
+        overflow: auto;
+    }
+
+    .table-wrapper table {
+
+        overflow: hidden;
+        table-layout: fixed;
+        /* Use the natural table width (avoid fixed layout) */
+    }
+
+}
+
+/* Large devices (desktops, 900px and up) */
+@media (min-width: 901px) {
+
+    .table-wrapper {
+        width: 100%;
+        max-width: 100%;
+        max-height: 300px;
+        /* Adjust as needed */
+        overflow: auto;
+    }
+
+    .table-wrapper table {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        table-layout: fixed;
+        /* Use the natural table width (avoid fixed layout) */
+    }
+
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+
+.selectStyle {
+    border: 1px solid #EFEFEF;
+    padding: 7px 8px 7px 8px;
+    border-radius: 5px;
+}
+
+.selectedPage {
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    padding: 8px 16px 8px 16px;
+    border-radius: 4px;
+    color: white;
+    background: #3E97FF;
+    border: 1px solid #3E97FF;
+
+}
+
+.selectedPage:hover{
+    cursor: pointer;
+    background: white;
+    color: #3E97FF;
+    border: 1px solid #3E97FF;
+}
+
+.NotSelected {
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    color: #7E8299;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid white;
+
+}
+
+.btnNextPrev {
+    cursor: pointer;
+    
+    border: none;
+    background-color: transparent;
+
+}
+
+
+
+
+
+.NotSelected:hover{
+    cursor: pointer;
+
+    border-radius: 4px;
+    background: white;
+    color: #3E97FF;
+    border: 1px solid #3E97FF;
+}
+
+
+.IconSvgMore svg path {
+    stroke: #7E8299;
+}
+
+.IconSvgMore:disabled svg path {
+    stroke: #c4c7cc;
+}
+
+
+.btnNextPrev:hover {
+    animation: shack 2s ease 0s 1 normal forwards;
+
+}
+.btnNextPrev:disabled {
+    animation: shack 0s ease 0s 1 normal forwards;
+
+}
+
+
+@keyframes shack {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-2px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(2px);
+	}
+
+	80% {
+		transform: translateX(1px);
+	}
+
+	90% {
+		transform: translateX(-1px);
+	}
+}

@@ -1,0 +1,91 @@
+{
+
+
+  "PM": "PM",
+  "AM": "AM",
+  "viewNumberModal": [
+    {
+      "viewNumber": "View Number",
+      "title": ""
+    },
+    {
+      "protocalName": "Protocal Name",
+      "title": ""
+    },
+    {
+      "country": "Country",
+      "title": ""
+    },
+    {
+      "currentClient": "Current Client",
+      "title": ""
+    },
+    {
+      "numberOfExtensions": "Number Of Extensions",
+      "title": ""
+    },
+    {
+      "lastShipmentDate": "Last Shipment Date",
+      "title": ""
+    },
+    {
+      "currentBalance": "Current Balance",
+      "title": ""
+    },
+    {
+      "currentBalanceForCurrentUser": "Current Balance For Current User",
+      "title": ""
+    },
+    {
+      "currentBalanceForAll": "Current Balance For All",
+      "title": ""
+    },
+    {
+      "client": "Client",
+      "title": ""
+    },
+    {
+      "dateOfAppointment": "Date Of Appointment",
+      "title": ""
+    },
+    {
+      "dateOfCancelAppointment": "Date Of Cancel Appointment",
+      "title": ""
+    },
+    {
+      "appointmentOfficer": "Appointment Officer ",
+      "title": ""
+    },
+    {
+      "localMinutes": "Local Minutes",
+      "title": ""
+    },
+    {
+      "InternationalMinutes": "International Minutes",
+      "title": ""
+    },
+    {
+      "amount": "Amount",
+      "title": ""
+    },
+    {
+      "showRecourd": "Show",
+      "title": ""
+    },
+    {
+      "ofOrigin": "Of origin",
+      "title": ""
+    }
+
+    ,
+    {
+      "creationDate": "Creation Date",
+      "title": ""
+    }
+    ,
+    {
+      "createdBy": "Created By",
+      "title": ""
+    }
+  ]
+}

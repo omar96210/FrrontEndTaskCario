@@ -1,0 +1,14 @@
+
+<app-navbar
+(ChangeLang)="ChangeLang()"
+></app-navbar>
+
+<div class="   p-4" style="display: flex ; justify-content: center; " [ngClass]="startAnimation==true?'myAnim':''" >
+    <div class="modalBox"> 
+
+        <router-outlet></router-outlet>
+
+    </div>
+
+  </div>
+

@@ -1,0 +1,55 @@
+
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+	.modalBox {
+		background-color: white;
+		border-radius: 8px;
+
+		
+	
+	
+	}
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 601px) and (max-width: 1200px) {
+	.modalBox {
+		background-color: white;
+		border-radius: 8px;
+		
+	}
+}
+
+/* Large devices (desktops, 900px and up) */
+@media (min-width: 1201px) {
+	.modalBox {
+		background-color: white;
+		border-radius: 8px;
+		width: 60%;
+
+	}
+}
+
+
+
+
+
+.myAnim{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

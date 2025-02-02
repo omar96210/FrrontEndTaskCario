@@ -1,0 +1,94 @@
+{
+  "PM": "م",
+  "AM": "ص",
+  "viewNumberModal": [
+    {
+      "viewNumber":"عرض الرقم",
+      "title":""
+    },
+    {
+      "protocalName":"إسم البروتوكول",
+      "title":""
+    },
+    {
+      "country":"الدولة",
+      "title":""
+    },
+    {
+      "currentClient":"العميل الحالي",
+      "title":""
+    },
+    {
+      "numberOfExtensions":"عدد الامتدادات",
+      "title":""
+    },
+    {
+      "lastShipmentDate":"تاريخ أخر شحنة",
+      "title":""
+    },
+    {
+      "currentBalance":"الرصيد الحالي",
+      "title":""
+    },
+    {
+      "currentBalanceForCurrentUser":"الرصيد المستخدم للعميل الحالي",
+      "title":""
+    },
+    {
+      "currentBalanceForAll":"الرصيد المستخدم للرقم ككل",
+      "title":""
+    },
+    {
+      "client":"العميل",
+      "title":""
+    },
+    {
+      "dateOfAppointment":"تاريخ التعيين",
+      "title":""
+    },
+    {
+      "dateOfCancelAppointment":"تاريخ إلغاء التعيين",
+      "title":""
+    },
+    {
+      "appointmentOfficer":"المسؤول عن التعيين",
+      "title":""
+    },
+    {
+      "localMinutes":"الدقائق المحلية",
+      "title":""
+    },
+    {
+      "InternationalMinutes":"الدقائق الدولية",
+      "title":""
+    },
+    {
+      "amount":"المبلغ",
+      "title":""
+    }
+    ,
+    {
+      "showRecourd": "عرض",
+      "title": ""
+    },
+    {
+      "ofOrigin": "من أصل",
+      "title": ""
+    }
+    ,
+    {
+      "creationDate": "تاريخ الإنشاء",
+      "title": ""
+    },
+    {
+      "createdBy": "تم الأإنشاء بواسطة",
+      "title": ""
+    }
+   
+   
+
+
+   
+  ]
+}
+

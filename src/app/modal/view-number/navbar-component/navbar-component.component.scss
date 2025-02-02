@@ -1,0 +1,31 @@
+.IconSvgHstag svg path {
+    stroke: #3E97FF;
+}
+
+
+.BoxLogo {
+    background: #3E97FF1A;
+    border-radius: 4px;
+
+}
+
+.closeBox {
+    background: #F4F4F4;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.IconSvgClose svg path {
+    stroke: black;
+}
+.IconSvgClose:hover svg path {
+    stroke: rgb(177, 22, 22)
+
+}
+
+
+
+.borderBottomStyle {
+    border-bottom: 1px solid #E4E4E4
+}

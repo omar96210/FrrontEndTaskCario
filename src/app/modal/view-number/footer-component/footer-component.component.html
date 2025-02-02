@@ -1,0 +1,45 @@
+<div class="p-1">
+    <div class="BoxStyleForModal">
+        <div class="row">
+            <div class="col-12  ">
+                <div class="row">
+                    <div class="col-md-6 col-12 inline-flex">
+                        <div>
+                            <img [src]="createdBy.imageSrc" style="width: 40px; height: 40px;"/>
+                            &nbsp;
+                        </div>
+                        <div>
+                           
+                            <p class="font-neo-sans-arabic-400" style="color: #6B7280;">
+                                {{'viewNumberModal.19.createdBy'| translate}}
+    
+                            </p>
+                            <p class="font-neo-sans-arabic-400 oneline"  style="color: #1C1C28;">
+                                {{preferencesService.getAppLanguage()=='En'?createdBy.appointmentOfficerEn:createdBy.appointmentOfficerAr}}
+                            </p>
+                     
+                        </div>
+    
+                    </div>
+                    <div class="col-md-6 col-12 flex-end-not-centerd ">
+                        <div class="" >
+                            <p class="font-neo-sans-arabic-400"  style="color: #6B7280;">
+                                {{'viewNumberModal.18.creationDate'| translate}}
+                            </p>
+                            <p class="poppins-medium "  style="color: #1C1C28;">
+                                {{ getFormattedDate() }}  {{ getFormattedTime() }}
+                                <span class="font-neo-sans-arabic-400">
+                                    {{ getAmPm() | translate }}
+                                </span> 
+                            </p>
+        
+                        </div>
+                  
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </div>
+</div>

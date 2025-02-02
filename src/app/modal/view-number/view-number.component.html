@@ -1,0 +1,9 @@
+<app-navbar-component [modalName]="'viewNumberModal.0.viewNumber'"></app-navbar-component>
+
+
+<div class="bodyBox p-2 ">
+
+    <app-master-information-component [masterInfo]="GetDataApiJson.masterInfo"></app-master-information-component>
+    <app-body-component [data]="GetDataApiJson.tableData" [currencyData]="GetDataApiJson.masterInfo.currencyData"></app-body-component>
+    <app-footer-component [createdBy]="GetDataApiJson.createdBy"></app-footer-component>
+</div>

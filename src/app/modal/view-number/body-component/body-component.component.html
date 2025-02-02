@@ -1,0 +1,227 @@
+<div class="p-1">
+    <div class="BoxStyleForModal">
+        <div class="row">
+            <div class="col-12 ">
+                <div class="table-wrapper ">
+
+                    <table class="tableMore ">
+                        <thead class=" sticky-top">
+                            <tr>
+                                <th [ngClass]="preferencesService.getAppLanguage()=='En'?' tdRades0En':'tdRades0Ar '">
+                                    <p class="font-neo-sans-arabic-400 oneline"
+                                        [title]="'viewNumberModal.9.client'|translate">
+                                        {{'viewNumberModal.9.client'|translate}}
+                                    </p>
+
+                                </th>
+                                <th>
+                                    <p class="font-neo-sans-arabic-400 oneline"
+                                        [title]="'viewNumberModal.10.dateOfAppointment'|translate">
+                                        {{'viewNumberModal.10.dateOfAppointment'|translate}}
+                                    </p>
+                                </th>
+                                <th>
+                                    <p class="font-neo-sans-arabic-400 oneline "
+                                        [title]="'viewNumberModal.11.dateOfCancelAppointment'|translate">
+                                        {{'viewNumberModal.11.dateOfCancelAppointment'|translate}}
+                                    </p>
+                                </th>
+                                <th>
+                                    <p class="font-neo-sans-arabic-400 oneline "
+                                        [title]="'viewNumberModal.12.appointmentOfficer'|translate">
+                                        {{'viewNumberModal.12.appointmentOfficer'|translate}}
+                                    </p>
+                                </th>
+                                <th>
+                                    <p class="font-neo-sans-arabic-400 oneline"
+                                        [title]="'viewNumberModal.13.localMinutes'|translate">
+                                        {{'viewNumberModal.13.localMinutes'|translate}}
+                                    </p>
+                                </th>
+                                <th>
+                                    <p class="font-neo-sans-arabic-400 oneline"
+                                        [title]="'viewNumberModal.14.InternationalMinutes'|translate">
+                                        {{'viewNumberModal.14.InternationalMinutes'|translate}}
+                                    </p>
+                                </th>
+                                <th
+                                    [ngClass]="preferencesService.getAppLanguage()=='En'?' tdRadeslastEn':' tdRadeslastAr'">
+                                    <p class="font-neo-sans-arabic-400 oneline"
+                                        [title]="'viewNumberModal.15.amount'|translate">
+                                        {{'viewNumberModal.15.amount'|translate}}
+                                    </p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @for (record of ResponsData; track $index) {
+                            <tr>
+                                <td class=""
+                                    [title]="preferencesService.getAppLanguage()=='En'?record.clientNameEn:record.clientNameAr"
+                                    [ngClass]="preferencesService.getAppLanguage()=='En'?'tdBorder0En tdRades0En':'tdRades0Ar tdBorder0Ar'">
+
+
+                                    <p class="font-neo-sans-arabic-400 oneline">
+                                        @if(record.imageSrc){
+                                        <img [src]="record.imageSrc" style="width: 20px; height: 20px;" />
+                                        &nbsp;
+                                        }
+                                        {{preferencesService.getAppLanguage()=='En'?record.clientNameEn:record.clientNameAr}}
+                                    </p>
+
+
+                                </td>
+                                <td>
+                                    <p class="poppins-regular">
+                                        {{record.dateOfAppointment}}
+                                    </p>
+
+                                </td>
+                                <td>
+                                    <p class="poppins-regular">
+                                        @if(record.dateOfCancelAppointment){
+                                        {{record.dateOfCancelAppointment}}
+
+                                        }@else{
+                                        -
+                                        }
+
+                                    </p>
+
+                                </td>
+                                <td
+                                    [title]="preferencesService.getAppLanguage()=='En'?record.appointmentOfficerEn:record.appointmentOfficerAr">
+                                    <p class="font-neo-sans-arabic-400 oneline">
+                                        {{preferencesService.getAppLanguage()=='En'?record.appointmentOfficerEn:record.appointmentOfficerAr}}
+                                    </p>
+                                </td>
+
+                                <td>
+                                    <p class="poppins-regular">
+                                        {{record.localMinutes}}
+                                    </p>
+
+                                </td>
+                                <td>
+                                    <p class="poppins-regular">
+                                        {{record.InternationalMinutes}}
+                                    </p>
+
+                                </td>
+                                <td
+                                    [ngClass]="preferencesService.getAppLanguage()=='En'?'tdBorderlastEn tdRadeslastEn':'tdBorderlastAr tdRadeslastAr'">
+
+                                    <p class="poppins-regular">
+                                        {{record.amount}}
+                                        <span class="font-neo-sans-arabic-400">
+                                            @if(currencyData){
+                                            {{currencyData['name'+preferencesService.getAppLanguage()]}}
+                                            }
+                                        </span>
+
+                                    </p>
+
+                                </td>
+                            </tr>
+
+                            }
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="col-12 " style="padding-top: 10px;">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="inline-flex-center">
+                            <div class="px-1">
+                                <p class="font-neo-sans-arabic-500 oneline ">
+                                    {{'viewNumberModal.16.showRecourd' | translate}}
+                                </p>
+                            </div>
+                            <div class="px-1">
+                                <select class="selectStyle pointer" [(ngModel)]="numRecourd" (ngModelChange)="generateArray()">
+                                    <option value="5">
+                                        <p class="poppins-medium pointer">
+                                            5
+                                        </p>
+                                    </option>
+                                    <option value="10" class="pointer">
+                                        <p class="poppins-medium pointer">
+                                            10
+                                        </p>
+                                    </option>
+                                    <option [value]="data.length">
+                                        <p class="poppins-medium pointer">
+                                            {{data.length}}
+                                        </p>
+                                    </option>
+                                </select>
+        
+                            </div>
+                            <div class="px-1">
+                                <p class="font-neo-sans-arabic-500 oneline ">
+                                    {{'viewNumberModal.17.ofOrigin' | translate}}
+                                </p>
+                            </div>
+                            <div class="px-1">
+                                <p class="poppins-medium">
+                                    {{data.length}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 flex-end">
+                        @if(generatedArray.length>1){
+                            <div class="inline-flex-center" dir="ltr">
+            
+            
+                                <button class="btnNextPrev IconSvgMore p-2" (click)="prevPage()"[disabled]="!(this.currentPage>1)">
+                                 
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path d="M15 18L9 12L15 6" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                    </svg>
+                                </button>
+            
+                                @for (page of generatedArray; track $index; let i = $index) {
+            
+                                <p class="poppins-regular" (click)="SetCureentPage(page)"
+                                    [ngClass]="currentPage==page?'selectedPage':'NotSelected'">
+                                    {{page}}
+                                </p>
+            
+                                }
+                                <button class="btnNextPrev IconSvgMore p-2" (click)="nextPage()" [disabled]="!(this.currentPage<(this.data.length / this.numRecourd))">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path d="M9 18L15 12L9 6" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                    </svg>
+            
+                                </button>
+                            </div>
+                            }
+                    </div>
+                </div>
+
+           
+           
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>

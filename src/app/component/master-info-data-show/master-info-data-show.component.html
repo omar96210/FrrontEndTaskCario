@@ -1,0 +1,51 @@
+<div class="p-2">
+    <div class="row BorderSpraterRtl"  >
+        <div class="col-12 flex-center">
+            <p class="font-neo-sans-arabic-400 titleColor oneline" [title]="labelText |translate">
+        
+               {{labelText |translate}}
+            </p>
+         
+        </div>
+    
+        @if(dataType=='translate'){
+            <div class="col-12 flex-center " >
+                
+             
+
+                    <p class="oneline font-neo-sans-arabic-400 " [title]="data['name'+preferencesService.getAppLanguage()]">
+                        @if(imageSrc){
+                            <img [src]="imageSrc" style="width: 20px; height: 20px;"/>
+                            &nbsp;
+                        }
+                        {{data['name'+preferencesService.getAppLanguage()]}}
+                    </p>
+            
+            
+              </div>
+        }@else{
+            <div class="col-12 flex-center">
+                <p class="oneline poppins-regular" [title]="data">
+                    @if(padNumberEnable==true&&data<10){
+                         {{'0'+data}}
+                    }@else{
+                        {{data}}
+                    }
+                    
+                
+                
+                </p>
+                <p class="font-neo-sans-arabic-400">
+                    &nbsp;
+                    @if(currencyData){
+                        {{currencyData['name'+preferencesService.getAppLanguage()]}}
+                    }
+                </p>
+              </div>
+        } 
+    
+    
+    
+    </div>
+</div>
+

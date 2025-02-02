@@ -1,0 +1,372 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+
+
+
+p{
+    padding: 0px;
+    margin: 0px;
+  }
+
+
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-space-between-noAllign {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .flex-end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .flex-end-not-centerd{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;  
+  }
+  
+  .inline-flex {
+    display: inline-flex;
+  }
+  .inline-flex-center {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-align-items-center {
+    display: flex;
+  
+    align-items: center;
+  }
+  
+  .flex-align-items-end {
+    display: flex;
+  
+    align-items: end;
+  }
+  
+  .flex-center-align-items-end {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  
+  .flex-center-start {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .inlineflex-align-items-end {
+    display: inline-flex;
+    align-items: end;
+  }
+  
+
+
+
+
+  .poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+
+.font-neo-sans-arabic-300 {
+    font-family: 'Neo Sans Arabic', sans-serif;
+    font-weight: 300;
+}
+.font-neo-sans-arabic-400 {
+    font-family: 'Neo Sans Arabic', sans-serif;
+    font-weight: 400;
+}
+.font-neo-sans-arabic-500 {
+    font-family: 'Neo Sans Arabic', sans-serif;
+    font-weight: 500;
+}
+.font-neo-sans-arabic-600 {
+    font-family: 'Neo Sans Arabic', sans-serif;
+    font-weight: 600;
+}
+.font-neo-sans-arabic-700 {
+    font-family: 'Neo Sans Arabic', sans-serif;
+    font-weight: 700;
+}
+
+
+.oneline {
+  clear: both !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  max-width: 50vw;
+}
+
+p {
+    font-size: 14px; /* Default font size for paragraphs */
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+h1 {
+    font-size: 2.5em; /* Default font size for h1 */
+    margin: 0 0 0.5em;
+}
+
+h2 {
+    font-size: 2em; /* Default font size for h2 */
+    margin: 0 0 0.5em;
+}
+
+h3 {
+    font-size: 1.75em; /* Default font size for h3 */
+    margin: 0 0 0.5em;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    p {
+        font-size: 14px; /* Smaller font size for paragraphs */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller font size for h1 */
+    }
+
+    h2 {
+        font-size: 1.75em; /* Smaller font size for h2 */
+    }
+
+    h3 {
+        font-size: 1.5em; /* Smaller font size for h3 */
+    }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+
+  .BorderSpraterltr{
+    border-right: 1px solid #DFDFDF;
+    
+}
+.BorderSpraterRtl{
+   
+    border-right: 1px solid #DFDFDF;
+    
+}
+    p {
+        font-size: 14px; /* Slightly smaller font size for paragraphs */
+    }
+
+    h1 {
+        font-size: 2.25em; /* Slightly smaller font size for h1 */
+    }
+
+    h2 {
+        font-size: 1.85em; /* Slightly smaller font size for h2 */
+    }
+
+    h3 {
+        font-size: 1.65em; /* Slightly smaller font size for h3 */
+    }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media (min-width: 901px) {
+  .BorderSpraterltr{
+    border-right: 1px solid #DFDFDF;
+    
+}
+.BorderSpraterRtl{
+   
+    border-right: 1px solid #DFDFDF;
+    
+}
+    p {
+        font-size: 14px; /* Default font size for paragraphs */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Default font size for h1 */
+    }
+
+    h2 {
+        font-size: 2em; /* Default font size for h2 */
+    }
+
+    h3 {
+        font-size: 1.75em; /* Default font size for h3 */
+    }
+}
+
+.BoxStyleForModal{
+    border: 1px solid #ECF0F5;
+    background: #FFFFFF;
+ 
+    padding: 12px;
+
+    border-radius: 6px;
+  
+
+    
+}
+.pointer{
+  cursor: pointer;
+
+}
+
+.primaryBtn {
+    border-radius: 4px;
+    border: 0.7px solid var(--netral-lighten, #C4C4C4);
+    background: #48B29A;
+    color: #ffffff;
+    cursor: pointer;
+  
+  }
+  .primaryBtn:hover {
+    background: #ffffff;
+    color: #48B29A;
+    border-radius: 4px;
+    border: 0.7px solid #48B29A;
+    cursor: pointer;
+  }
+  .primaryBtn:disabled {
+    background: lightgray;
+    color: #ffffff;
+    border-radius: 4px;
+    border: 0.7px solid lightgray;
+    cursor: not-allowed;
+  }
+  
+  
+  
