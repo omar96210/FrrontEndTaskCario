@@ -87,5 +87,15 @@
       "createdBy": "Created By",
       "title": ""
     }
+    ,
+    {
+      "changeNumber": "Change Number",
+      "title": ""
+    }
+    ,
+    {
+      "cancelAppointment": "Cancel Appointment",
+      "title": ""
+    }
   ]
 }
